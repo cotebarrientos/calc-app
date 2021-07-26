@@ -1,3 +1,4 @@
+/* eslint no-eval: 0 */
 import React, { useState } from 'react'
 import Functions from './components/Functions'
 import Numbers from './components/Numbers'
@@ -43,7 +44,8 @@ const App = () => {
             }}  
             onClickEqual={equal => {
                 console.log("Equal:", equal)
-                setStack(`${stack}${equal}`)
+                // eslint-disable-next-line
+                setStack(eval(stack).toString())
             }}
         />
     </main>)
