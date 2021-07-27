@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "calc-app-mari",
+    "react-calculator": "calc-app-mari"
+  }
+}
